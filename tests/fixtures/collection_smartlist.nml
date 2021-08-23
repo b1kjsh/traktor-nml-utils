@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<NML VERSION="19">
+    <HEAD COMPANY="www.native-instruments.com" PROGRAM="Traktor"></HEAD>
+    <MUSICFOLDERS></MUSICFOLDERS>
+    <COLLECTION ENTRIES="1">
+        <ENTRY MODIFIED_DATE="2021/5/29" MODIFIED_TIME="180" AUDIO_ID="AOMTREQ0VEQ0VUVDRUVDNERTNUNDNFRUM1RETYZrn5ZFj8dVb/jGadhlyPx0Rv+FRc+bhY+mRV/nVE74ZFj6mlf9hYrPhkWvp0Vup1Rc+GbJ+nRX/YVV/4xmv5ZMj8dEb/hkXPmoV/lkVet1RJ2GRW+WRV/oV6v5ZFn7dFb+jFbvdkWPpkRv51RP+Ldq+XS4/YVF/4ZFnoZFb8dZnvhUXPl0WPybVv+Fe6+WRY+3VW/4xWrXZFf5dEXqdUW9hkV/p0uP2FRf+GRa+qlX/HVF34VFr5ZFf8jFb/hWuflkWPx1Vtt1RZ+GXI+3RG/4VF34uFn6daj+hUX/hkWfqaVtIA==" TITLE="'Ballerholic' - Rap Freestyle Type Beat _ Hard Underground Boom Bap Type Beat (By KhronosBeats)-ESsfnKyApYs">
+            <LOCATION DIR="/:Music/:new tracks/:" FILE="'Ballerholic' - Rap Freestyle Type Beat _ Hard Underground Boom Bap Type Beat (By KhronosBeats)-ESsfnKyApYs.mp3" VOLUME="Rocket" VOLUMEID="Macintosh HD"></LOCATION>
+            <MODIFICATION_INFO AUTHOR_TYPE="user"></MODIFICATION_INFO>
+            <INFO BITRATE="116000" COMMENT="#Instrumental" KEY="9m" PLAYCOUNT="2" PLAYTIME="228" PLAYTIME_FLOAT="227.087997" IMPORT_DATE="2021/5/28" LAST_PLAYED="2020/12/18" FLAGS="14" FILESIZE="3328"></INFO>
+            <TEMPO BPM="84.999809" BPM_QUALITY="100.000000"></TEMPO>
+            <LOUDNESS PEAK_DB="-2.206281" PERCEIVED_DB="-0.392288" ANALYZED_DB="-0.392288"></LOUDNESS>
+            <MUSICAL_KEY VALUE="17"></MUSICAL_KEY>
+            <CUE_V2 NAME="AutoGrid" DISPL_ORDER="0" TYPE="4" START="65.996960" LEN="0.000000" REPEATS="-1" HOTCUE="0"></CUE_V2>
+            <CUE_V2 NAME="n.n." DISPL_ORDER="0" TYPE="0" START="22640.334008" LEN="0.000000" REPEATS="-1" HOTCUE="1"></CUE_V2>
+            <CUE_V2 NAME="n.n." DISPL_ORDER="0" TYPE="0" START="45242.322628" LEN="0.000000" REPEATS="-1" HOTCUE="2"></CUE_V2>
+            <CUE_V2 NAME="n.n." DISPL_ORDER="0" TYPE="0" START="90446.114321" LEN="0.000000" REPEATS="-1" HOTCUE="3"></CUE_V2>
+        </ENTRY>
+    </COLLECTION>
+    <SETS ENTRIES="0"></SETS>
+    <PLAYLISTS>
+        <NODE TYPE="FOLDER" NAME="$ROOT">
+            <SUBNODES COUNT="1">
+                <NODE TYPE="PLAYLIST" NAME="_LOOPS">
+                    <PLAYLIST ENTRIES="0" TYPE="LIST" UUID="7c75deb302774506a64377d0385235cb"></PLAYLIST>
+                </NODE>
+            </SUBNODES>
+        </NODE>
+    </PLAYLISTS>
+    <INDEXING></INDEXING>
+</NML>

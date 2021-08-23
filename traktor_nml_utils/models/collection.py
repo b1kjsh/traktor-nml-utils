@@ -1022,6 +1022,33 @@ class Collectiontype:
         )
     )
 
+@dataclass
+class SearchExpressionType:
+    class Meta:
+        name = "SEARCHEXPRESSIONType"
+        
+@dataclass
+class Smartlisttype:
+    class Meta:
+        name = "SMARTLISTType"
+    uuid: Optional[str] = field(
+        default=None,
+        metadata=dict(
+            name="UUID",
+            type="Attribute"
+        )
+    )
+    search_expression: List[SearchExpressionType] = field(
+        default_factory=list,
+        metadata=dict(
+            name="SEARCH_EXPRESSION",
+            type="Element",
+            min_occurs=0,
+            max_occurs=9223372036854775807
+        )
+    )
+
+
 
 @dataclass
 class Playlisttype:
@@ -1180,6 +1207,13 @@ class Nodetype:
     class Meta:
         name = "NODEType"
 
+    smartlist: Optional[Smartlisttype] = field(
+        default=None,
+        metadata=dict(
+            name="SMARTLIST",
+            type="Element"
+        )
+    )
     playlist: Optional[Playlisttype] = field(
         default=None,
         metadata=dict(
@@ -1254,6 +1288,69 @@ class Playliststype:
         )
     )
 
+@dataclass
+class Criteriatype:
+    """
+    :ivar node:
+    """
+    class Meta:
+        name = "CRITERIAtype"
+
+    attribute: Optional[int] = field (
+        default=None,
+        metadata=dict(
+            name="ATTRIBUTE",
+            type="Attribute"
+        )
+    )
+    direction: Optional[int] = field (
+        default=None,
+        metadata=dict(
+            name="DIRECTION",
+            type="Attribute"
+        )
+    )
+
+@dataclass
+class Sortinginfotype:
+    class Meta:
+        name = "SortingInfoType"
+    
+    criteria: List[Criteriatype] = field(
+        default_factory=list,
+        metadata=dict(
+            name="CRITERIA",
+            type="Element",
+            min_occurs=0,
+            max_occurs=9223372036854775807
+        )
+    )
+    path: Optional[str] = field(
+        default=None,
+        metadata=dict(
+            name="PATH",
+            type="Attribute"
+        )
+    )
+
+@dataclass
+class Indexingtype:
+    """
+    :ivar node:
+    """
+    class Meta:
+        name = "INDEXINGType"
+
+    sorting_info: List[Sortinginfotype] = field(
+        default_factory=list,
+        metadata=dict(
+            name="SORTING_INFO",
+            type="Element",
+            min_occurs=0,
+            max_occurs=9223372036854775807
+        )
+    )
+
 
 @dataclass
 class Nmltype:
@@ -1310,12 +1407,14 @@ class Nmltype:
             required=True
         )
     )
-    indexing: Optional[str] = field(
-        default=None,
+    indexing: Optional[Indexingtype] = field(
+        default_factory=None,
         metadata=dict(
             name="INDEXING",
             type="Element",
-            required=True
+            required=True,
+            min_occurs=0,
+            max_occurs=9223372036854775807
         )
     )
     sorting_order: List[SortingOrdertype] = field(

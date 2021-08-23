@@ -17,21 +17,20 @@ from traktor_nml_utils.models.collection import (
 
 dir_path = os.path.dirname(os.path.realpath(__file__))
 
-
 def test_history():
     path = Path(os.path.join(dir_path, "fixtures", "history.nml"))
     history = TraktorHistory(path)
-    assert (
-        history.nml.playlists.node.subnodes.node.playlist.entry[0].extendeddata.deck
-        == 1
-    )
-
+    assert (history.nml.playlists.node.subnodes.node.playlist.entry[0].extendeddata.deck == 1)
 
 def test_collection_with_indexing():
     path = Path(os.path.join(dir_path, "fixtures", "collection_indexing.nml"))
     collection = TraktorCollection(path)
     assert len(collection.nml.collection.entry) == 1
-
+    
+def test_collection_with_smartlists():
+    path = Path(os.path.join(dir_path, "fixtures", "collection_smartlist.nml"))
+    collection = TraktorCollection(path)
+    assert len(collection.nml.collection.entry) == 1
 
 def test_add_entry_to_collection(tmpdir):
     with tempfile.TemporaryFile() as fp:
